@@ -1,45 +1,68 @@
-<!DOCTYPE HTML>  
-<html>  
-    <header>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="table_style.css">
-        <title>My Webpage Title</title>
+<!DOCTYPE html>
+<html>
+  <header>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="table_style.css" />
+    <title>James Ning's Webpage</title>
+  </header>
+  <body>
+    <!---Navigation--->
+    <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
+        <a class="navbar-brand" href="./index.html">James' Webpage</a>
+        <!--This code defines the "List" link in the top right corner of the navigation pane-->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html"
+              >List</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--This section defines the middle section of the webpage-->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container d-flex align-items-center flex-column">
+        <!-- This code is for the student name-->
+        <h1 class="masthead-heading text-uppercase mb-0">James Ning</h1>
+        <!--This code creates the two lines separating the student name from the subtitle-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!--This code creates the subheading underneath the line dividers-->
+        <p class="masthead-subheading font-weight-light mb-0">
+          School of Information Student
+        </p>
+      </div>
     </header>
-    <body>  
-        <!---Navigation--->
-        <!--This section of code defines the navigation bar at the top of the page.  The classes used here are defined in the style.css file.-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <!--This code defines the "My Webpage" link in the top left corner of the navigation pane-->
-                <a class="navbar-brand" href="./index.html">My Webpage</a>
-                <!--This code defines the "List" link in the top right corner of the navigation pane-->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html">List</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!--This section defines the middle section of the webpage-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                
-                <!-- This code is for the student name-->
-                <h1 class="masthead-heading text-uppercase mb-0">Test Student</h1>
-                <!--This code creates the two lines separating the student name from the subtitle-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!--This code creates the subheading underneath the line dividers-->
-                <p class="masthead-subheading font-weight-light mb-0">School of Information Student</p>
-            </div>
-        </header>
-        <section class="text-center">
-
-            <div class="col-md-6 col-lg-4 mb-5">
-                <!-- put your bio paragraph here; remember to use the correct html tags -->
-                
-            </div>
-        </section>
-    </body>
-
+    <section class="text-left ms-5 row">
+      <div class="col-md-6 col-lg-6 mb-5 mt-5">
+        <h3>Biography</h3>
+        <p>
+          James Ning is a student at the University of Michigan School of
+          Information. He is a master's student in the Information Analysis
+          program. He is interested in data analysis and visualization. Lorem
+          ipsum dolor sit, amet consectetur adipisicing elit. Alias labore
+          officia, iste laboriosam provident ea reiciendis dicta perspiciatis
+          excepturi. Pariatur omnis, error quia nisi fugiat vel sequi id!
+          Impedit, quasi! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quisquam, quos.
+        </p>
+        <!-- put your bio paragraph here; remember to use the correct html tags -->
+      </div>
+      <div class="col-md-6 col-lg-5 mb-5 mt-5">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1687181325037-b76f5b49610e?q=80&w=2647&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Toucan"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+  </body>
 </html>
