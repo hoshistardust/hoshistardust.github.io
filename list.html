@@ -3,7 +3,7 @@
   <header>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="table_style.css" />
-    <title>My Webpage Title</title>
+    <title>James Ning's Favourite Albums</title>
   </header>
   <body>
     <!---Navigation--->
@@ -19,7 +19,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="./list.html"
-              >List</a
+              >Albums</a
             >
           </li>
         </ul>
@@ -27,11 +27,14 @@
     </nav>
     <!--This code creates the middle section of the webpage-->
     <header class="masthead bg-primary text-white text-center">
-      <h1>My Movies</h1>
+      <h1>My Favourite Albums</h1>
     </header>
     <!--Here is where the table will be loaded in.  The actual table will be loaded in JavaScript.-->
     <section class="mt-5 text-center">
-      <div id="showDataJSON"></div>
+      <div
+        class="container d-flex justify-content-center"
+        id="showDataJSON"
+      ></div>
     </section>
   </body>
 
@@ -52,7 +55,7 @@
                 */
         var jsonTable = document.createElement("table");
         var tr = jsonTable.insertRow(-1);
-        jsonTable.style.width = "75%";
+        jsonTable.style.width = "100%";
         let root;
         for (let prop in data) {
           root = prop;
